@@ -1,0 +1,15 @@
+
+  <ul class="todo-box" [ngClass]="{'green-color': !list.active}">
+    <li [ngClass]="{'strike': !list.active}"><span class="text-bold">Serial No. :</span> {{i+1}}</li>
+    <li [ngClass]="{'strike': !list.active}"><span class="text-bold">Title :</span> {{list.title}}</li>
+    <li [ngClass]="{'strike': !list.active}"><span class="text-bold">Desciption :</span> {{list.desc}}</li>
+    <div class="form-group mb-0 mt-2">
+      <div class="form-check checkbox-position">
+        <input class="form-check-input gridCheck" type="checkbox" id="gridCheck{{i}}" (click)="oncheckboxclick(list)" [checked]="!list.active">
+        <label class="form-check-label" for="gridCheck{{i}}" [ngClass]="{'strike': !list.active}"><i class="fa fa-check-square-o" aria-hidden="true"></i> Mark as done</label>
+      </div>
+
+    </div>
+    <a href="#" class="delete" (click)="onDeleteClick(list)"><i class="fa fa-times" aria-hidden="true"></i></a>
+  </ul>
+

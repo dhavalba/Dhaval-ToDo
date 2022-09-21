@@ -1,0 +1,15 @@
+<div class="container">
+  <app-add-todo (addtodolist)="addtodolisten($event)"></app-add-todo>
+  <div *ngIf="this.mytodolists.length===0; else elseBlock">
+    <div class="blank-box">
+      <h2>No Data To Display</h2>
+    </div>
+  </div>
+  <ng-template #elseBlock>
+    <div class="row">
+      <div class="list-display col-md-4" *ngFor="let list of mytodolists; let i = index">
+        <app-todo-data [list]="list" [i]="i" (listdelete)="deletelisten($event)" (checkboxdone)="checkboxlisten($event)"></app-todo-data>
+      </div>
+    </div>
+   </ng-template>
+</div>

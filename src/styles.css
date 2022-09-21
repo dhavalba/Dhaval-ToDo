@@ -1,0 +1,85 @@
+/* You can add global styles to this file, and also import other style files */
+ul li {
+  list-style: none;
+}
+.text-white {
+  color: #fff;
+}
+.todo-box {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 15px;
+  position: relative;
+}
+.text-bold {
+  color: #000;
+  font-weight: 600;
+}
+.delete {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 18px;
+  color: #000;
+}
+.insert-btn {
+  padding: 5px 30px;
+}
+.insert-form {
+  padding: 30px 20px;
+  border: 1px solid #cac6c6;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.blank-box {
+    border: 1px solid #928f8f;
+    border-radius: 10px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.blank-box h2 {
+  margin-bottom: 0;
+}
+.note {
+    font-size: 14px;
+    font-style: italic;
+    color: #d00808;
+    font-weight: 500;
+}
+.strike {
+  text-decoration: line-through;
+}
+.gridCheck {
+  visibility: hidden;
+}
+.checkbox-position {
+  text-align: right;
+}
+.green-color {
+  background-color: #28a745;
+}
+.green-color li {
+  color: #fff !important;
+}
+.green-color .text-bold {
+  color: #fff;
+}
+.green-color .form-check-label {
+  color: #fff;
+}
+.checkbox-position .form-check-label {
+  border: 1px solid #000;
+  border-radius: 15px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.green-color .checkbox-position .form-check-label {
+  border: 1px solid #fff;
+}
+.green-color .delete {
+  color: #fff;
+}
