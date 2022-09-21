@@ -1,13 +1,13 @@
 <div class="insert-form">
   <form [formGroup]="AddToDo">
     <div class="row">
-      <div class="col">
+      <div class="col-md-5 col-sm-12 media-margin">
         <input type="text" class="form-control" formControlName="title" placeholder="Title">
       </div>
-      <div class="col">
+      <div class="col-md-5 col-sm-12 media-margin">
         <input type="text" class="form-control" formControlName="desc" placeholder="Description">
       </div>
-      <div class="col-md-2 text-right">
+      <div class="col-md-2 col-sm-12 text-right">
         <button type="submit" class="btn w-100 insert-btn btn-success" (click)="onSubmit()">Insert</button>
       </div>
     </div>

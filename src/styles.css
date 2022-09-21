@@ -83,3 +83,9 @@ ul li {
 .green-color .delete {
   color: #fff;
 }
+
+@media (max-width: 576px) {
+  .media-margin {
+    margin-bottom: 10px;
+  }
+}
